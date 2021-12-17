@@ -2,7 +2,7 @@ trigger:
 - main
 name: Azure Pipelines
 variables:
-  python.version: '3.10.1'
+  python.version: '3.7.6'
 stages:
 - stage: Build
   jobs:
@@ -13,7 +13,7 @@ stages:
     - task: CmdLine@2
       displayName: Install Newman
       inputs:
-        script: 'sudo npm install -g newman@5.3.0'
+        script: 'sudo npm install -g newman'
         workingDirectory: $(System.DefaultWorkingDirectory)
     - task: CmdLine@2
       displayName: Run Regression Tests
