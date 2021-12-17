@@ -19,5 +19,5 @@ stages:
       displayName: Run Regression Tests
       continueOnError: true
       inputs:
-        script: 'sudo newman run starterapis.json'
+        script: 'newman run StarterAPIs.json'
         workingDirectory: 'starter-code/automatedtesting/postman'
